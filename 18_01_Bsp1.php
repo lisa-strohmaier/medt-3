@@ -25,8 +25,8 @@
 	   	if (!empty($_POST))
 			$text = $_POST['txt'];
 
-				if(isset($_POST['explodeBtn'])){ ?>
-					<?php
+				if(isset($_POST['explodeBtn'])){ 
+					
 						$arr = explode(" ",$text);
 						echo "<ul>";
 						foreach($arr as $item)
