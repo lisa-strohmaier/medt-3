@@ -19,7 +19,7 @@
 				
 			</div>
 		</form>
-		<p>Ihre Eingabe als Liste: </p>
+		<h2>Ihre Eingabe als Liste: </h2>
 		<?php
 
 	   	if (!empty($_POST))
