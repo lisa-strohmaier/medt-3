@@ -10,7 +10,7 @@
 	<h1>Grid Generator</h1>
 
 	<form action="#">
-
+	<label><input type="checkbox" name="day[]" value="DayZero">Day 0</label><br>
 	<label><input type="checkbox" name="day[]" value="Sunday">Sunday</label><br>
 	<label><input type="checkbox" name="day[]" value="Monday">Monday</label><br>
 	<label><input type="checkbox" name="day[]" value="Tuesday">Tuesday</label><br>
