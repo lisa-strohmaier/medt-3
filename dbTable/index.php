@@ -12,20 +12,8 @@
 	$user = 'htluser';
 	$pwd = 'htluser';
 
-
-   echo $_SERVER['REQUEST_URI'];
-
-   echo "<br> GET: ";
-   var_dump($_GET);
-
-   echo "<br> POST: ";
-   var_dump($_POST);
-
-
-
-   
-	try{
-   	$dbh = new PDO("mysql:host=$host;dbname=$dbname", $user, $pwd);
+   try{
+      $dbh = new PDO("mysql:host=$host;dbname=$dbname", $user, $pwd);
       $sql = "SELECT * FROM project";
       $res = $dbh->query($sql);
       $tmp = $res->fetchAll();
@@ -42,8 +30,8 @@
       echo "</table>";
 
    }
-	catch (PDOException $e) 
-	{
+   catch (PDOException $e) 
+   {
    	print "<p>DB nicht verfügbar: ".$e->getMessage()."</p>";
    	die();
    }
