@@ -52,11 +52,11 @@
    $status = $dbh->getAttribute(PDO::ATTR_CONNECTION_STATUS);
    if($status==true)
    {
-    //Eventuelle Nachricht, dass eine Verbindung vorhanden ist
+    //Verbindung
    }
    else
    {
-      echo "Keine Verbindung möglich :(";
+      //Keine Verbindung
    }
 ?>
 </body>
