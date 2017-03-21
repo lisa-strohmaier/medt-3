@@ -33,6 +33,11 @@
     $db = null;
 	}
 
+		/*$stmt1 = $db->prepare("SELECT * FROM project WHERE id=:pojectID");
+		$stmt1->bindParam(':pojectID', $_GET['id'], PDO::PARAM_INT);
+		$stmt1->execute();
+		print_r($stmt1->fetch());*/
+
 	if (isset($_GET['deleteProject']))
 	{
 
@@ -84,7 +89,7 @@
 		$query->bindParam(':name', $_POST['Name'], PDO::PARAM_STR);
 		$query->bindParam(':description', $_POST['Beschreibung'], PDO::PARAM_STR);
 		$query->bindParam(':createDate', $_POST['Datum']);
-		$query->bindParam(':id', $_POST['editProject'], PDO::PARAM_INT);
+		$query->bindParam(':id', $_POST['newProject'], PDO::PARAM_INT);
 		$query->execute();
 		if ($query != false)
 			$rowCount = $query->rowCount();
