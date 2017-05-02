@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liste</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+	</script>
+
+
+	
+	<script>
+
+	$(document).ready(function()
+	{
+		$('#newList').click(function() {$('#liste').append('<li class="listElement">Hi</li>');});
+		$('#deleteList').click(function() {$('.listElement').last().remove();});
+	});
+	</script>
+</head>
+<body>
+
+<span id="newList" class="glyphicon glyphicon-plus"></span>
+<span id="deleteList" class="glyphicon glyphicon-minus"></span>
+ <ul id="liste"></ul>
+</body>
+</html>
