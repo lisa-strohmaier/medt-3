@@ -38,7 +38,7 @@
 	{
 		session_start();
 		$_SESSION['check'] = true;
-		header('Location: http://localhost/medt/ue10/project-list.php');
+		header('Location: http://localhost/medt/ue14/project-list.php');
 	}
 ?>
 
