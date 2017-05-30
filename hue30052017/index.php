@@ -3,7 +3,7 @@
 
 	if (isset($_SESSION['check']))
 	{
-		header('Location: http://localhost/medt/ue10/project-list.php');
+		header('Location: http://localhost/medt/ue14/project-list.php');
 	}	
 ?>
 
