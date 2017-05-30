@@ -7,7 +7,7 @@
 			session_start();
 			session_unset();
 			session_destroy();
-			header('Location: http://localhost/medt/ue10/index.php');
+			header('Location: http://localhost/medt/ue14/index.php');
 		}
 
 	require "api/isLoggedIn.php";
